@@ -1,8 +1,17 @@
-const Header = () => {
-  return <div>
+import css from './Header.module.css'
 
-<p>Тут буде Лого</p>
-  </div>;
+
+const Header = () => {
+  return (
+    <div className={css.header}>
+      <p>Тут буде Лого</p>
+
+      <ul>
+        <li>Galeria</li>
+        <li>Contacts</li>
+      </ul>
+    </div>
+  );
 };
 
 export default Header;
